@@ -48,8 +48,17 @@ stage with 32 environments to check execution; it does not establish learning.
 `--plan` prints commands without requiring Isaac Sim.
 
 Checkpoints and TensorBoard events: `logs/rsl_rl/g1_flat/`.
+Reading those curves: `docs/reading-a-run.md`.
 Stage commands/status: `original_training/runs/`.
 Source and asset hashes: `FILE_HASHES.json` (independent of this repository's Git history).
+
+## Documentation
+
+- `docs/training-stages.md`: what each stage optimizes, and the PPO settings.
+- `docs/motion-data.md`: the `.npz` layout and how clips are produced.
+- `docs/reading-a-run.md`: checkpoints, logs and which curves to trust.
+- `docs/hardware.md`: GPU requirements and what `--num-envs` costs.
+- `docs/troubleshooting.md`: preflight failures and common training symptoms.
 
 This package has passed packaging and launcher checks only. GPU training and
 convergence have not been validated. The simulation pipeline is included; no
